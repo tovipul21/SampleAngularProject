@@ -9,7 +9,7 @@ import { employeeListDataModule } from "./employeedata";
 })
 
 export class EmployeeDetailComponent {
-    pageTitle = 'Employee Details Page';
+    pageTitle = 'Employee Detail Page';
     public employeeObject: IEmployee | undefined;
     
     public employeeListDataObject: Array<IEmployee> | undefined;
