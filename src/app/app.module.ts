@@ -4,8 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EmployeeListComponent } from '../Employee/employeelist.component';
-import { EmployeeDetailComponent } from '../Employee/employeedetail.component';
+import { EmployeeListComponent } from './Employee/employeelist.component';
+import { EmployeeDetailComponent } from './Employee/employeedetail.component';
 
 const appRoutes: Routes = [
   {path: 'employees', component: EmployeeListComponent},
