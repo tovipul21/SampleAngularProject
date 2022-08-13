@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeListComponent } from './Employee/employeelist.component';
 import { EmployeeDetailComponent } from './Employee/employeedetail.component';
+import { ConvertHyphensPipe } from './shared/pipes/GetSubString.pipe';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   {path: 'employees', component: EmployeeListComponent},
@@ -18,12 +20,14 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     EmployeeListComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    ConvertHyphensPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

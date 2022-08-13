@@ -3,5 +3,6 @@ export interface IEmployee {
     employeeName: string;
     employeeDesignation: string;
     salary: number;
+    employeeCode: string;
 }
  
