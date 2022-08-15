@@ -4,5 +4,6 @@ export interface IEmployee {
     employeeDesignation: string;
     salary: number;
     employeeCode: string;
+    performanceRating: number;
 }
  

@@ -8,6 +8,7 @@ import { EmployeeListComponent } from './Employee/employeelist.component';
 import { EmployeeDetailComponent } from './Employee/employeedetail.component';
 import { ConvertHyphensPipe } from './shared/pipes/GetSubString.pipe';
 import { FormsModule } from '@angular/forms';
+import { RatingComponent } from './shared/rating.component';
 
 const appRoutes: Routes = [
   {path: 'employees', component: EmployeeListComponent},
@@ -21,7 +22,8 @@ const appRoutes: Routes = [
     AppComponent,
     EmployeeListComponent,
     EmployeeDetailComponent,
-    ConvertHyphensPipe
+    ConvertHyphensPipe,
+    RatingComponent
   ],
   imports: [
     BrowserModule,

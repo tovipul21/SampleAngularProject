@@ -26,6 +26,7 @@
                         <th>Designation</th>
                         <th>Salary</th>
                         <th>Employee Code</th>
+                        <th>Employee Rating</th>
                     </tr>
                 </thead>
                 <tbody style="text-align:center">
@@ -38,7 +39,10 @@
                         <td>{{ employee.employeeName }}</td>
                         <td>{{ employee.employeeDesignation }}</td>
                         <td>{{ employee.salary | currency:"USD" }}</td>
-                        <td>{{ employee.employeeCode | ConvertHyphens : '-' : 'left' }}</td>
+                        <td>{{ employee.employeeCode | GetSubstring : '-' : 'left' }}</td>
+                        <td>
+                            <employee-rating [rating] = 'employee.performanceRating'></employee-rating>
+                        </td>
                     </tr>
                 </tbody>
             </table>
